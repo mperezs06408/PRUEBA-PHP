@@ -1,6 +1,6 @@
 <?php include('../Templantes/header.php'); ?>
 <div class="margen">
- <form action="resultado.php" method="post">
+ <form action="resultado.php" method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Nombre</label>
     <input  class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
