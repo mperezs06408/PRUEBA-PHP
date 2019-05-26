@@ -18,7 +18,6 @@
                 echo 'error';
             }
 
-            $conexion -> close();
         }
     ?>
 
