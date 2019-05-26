@@ -5,7 +5,7 @@ $user='santiago';
 $password='santiago';
 $db='PRUEBA';
 
-$conexion= new msqli($host,$user,$password,$db);
+$conexion= new mysqli($host,$user,$password,$db);
 
 if($conexion -> connect_errno){
     echo 'no hay conexion';
