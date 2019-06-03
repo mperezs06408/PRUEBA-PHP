@@ -2,8 +2,7 @@
 
 <?php include('../Conexion/conexion.php')?>
 
-<div>
-<h1>hola</h1>
+
  <?php
     $nombre=$_POST['nombre'];
     $contra=$_POST['contrasena'];
@@ -18,7 +17,7 @@
     }
     ?>
 
-</div>
+
 
 
 <?php include('../Templantes/footer.php')?>
