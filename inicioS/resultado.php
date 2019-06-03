@@ -9,8 +9,11 @@
 
     $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
     echo $sql;
-    $q= $conexion->query($sql);
-    echo mysql_result($q,0);
+    if ($conexion->query($sql) === TRUE) {
+        echo "alguna mk";
+    } else {
+        echo "joder";
+    }
     ?>
 
 
