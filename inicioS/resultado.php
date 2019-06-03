@@ -8,10 +8,13 @@
     $nombre=$_POST['nombre'];
     $contra=$_POST['contrasena'];
 
-    $sql="SELECT COUNT(*) FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
-    $q=mysql_query($sql,$conexion);
-    $result=mysql_result($q,0,'COUNT(*)');
-    echo $result;
+    $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
+    $q= mysql_query($sql);
+    if (!$q) {
+        echo "usuario no existe";
+    } else {
+        echo"bienvenido";
+    }
     ?>
 
 </div>
