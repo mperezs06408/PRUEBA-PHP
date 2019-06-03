@@ -2,19 +2,29 @@
 
 <?php include('../Conexion/conexion.php')?>
 
-
+<table>
+    <tr>
+        <td>nombre</td>
+        <td>apellido</td>
+        <td>email</td>
+        <td>contraseña</td>
+    </tr>
  <?php
-    $nombre=$_POST['nombre'];
-    $contra=$_POST['contrasena'];
 
-    $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
-    echo $sql;
-    if ($conexion->query($sql) === TRUE) {
-        echo "alguna mk";
-    } else {
-        echo "joder";
+    $sql="SELECT * FROM USUARIO";
+    $result=mysqli_query($conexion,$sql);
+    while($mostrar=mysqli_fetch_array($result)){
+    ?>
+    <tr>
+        <td><?php echo $mostrar['nombre'] ?></td>
+        <td><?php echo $mostrar['apellido'] ?></td>
+        <td><?php echo $mostrar['email'] ?></td>
+        <td><?php echo $mostrar['contrasena'] ?></td>
+    </tr>
+<?php
     }
     ?>
+</table>
 
 
 
