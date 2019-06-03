@@ -9,13 +9,8 @@
 
     $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
     echo $sql;
-    $q= mysql_query($sql,$conexion);
-    echo $q;
-    if (!$q) {
-        echo "usuario no existe";
-    } else {
-        echo"bienvenido";
-    }
+    $q= $conexion->query($sql);
+    echo mysql_result($q,0);
     ?>
 
 
