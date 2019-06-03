@@ -2,29 +2,17 @@
 
 <?php include('../Conexion/conexion.php')?>
 
-<table>
-    <tr>
-        <td>nombre</td>
-        <td>apellido</td>
-        <td>email</td>
-        <td>contraseña</td>
-    </tr>
- <?php
 
-    $sql="SELECT * FROM USUARIO";
-    $result=mysqli_query($conexion,$sql);
-    while($mostrar=mysqli_fetch_array($result)){
-    ?>
-    <tr>
-        <td><?php echo $mostrar['nombre'] ?></td>
-        <td><?php echo $mostrar['apellido'] ?></td>
-        <td><?php echo $mostrar['email'] ?></td>
-        <td><?php echo $mostrar['contrasena'] ?></td>
-    </tr>
 <?php
-    }
-    ?>
-</table>
+    $nombre=$_POST['nombre'];
+    echo $nombre;
+    $con=$_POST['contrasena'];
+    echo $con;
+
+    $q=mysqli_query($conexion,$q);
+    $result=mysql_result($q,0);
+    echo $result;
+?>
 
 
 
