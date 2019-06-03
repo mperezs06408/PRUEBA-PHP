@@ -9,6 +9,7 @@
     $contra=$_POST['contrasena'];
 
     $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
+    echo $sql;
     $q= mysql_query($sql,$conexion);
     if (!$q) {
         echo "usuario no existe";
