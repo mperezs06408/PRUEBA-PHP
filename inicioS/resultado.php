@@ -10,7 +10,7 @@
 
     $sql="SELECT COUNT(*) FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$contra."'";
     $q=mysql_query($sql,$conexion);
-    $result=mysql_result($q,0,'COUNT');
+    $result=mysql_result($q,0,'COUNT(*)');
     echo $result;
     ?>
 

@@ -17,13 +17,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="sesion/sesion.php">Registrarse</a>
+        <a class="nav-link" href="../sesion/sesion.php">Registrarse</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="inicioS/inicioS.php">Iniciar sesion</a>
+        <a class="nav-link" href="../inicioS/inicioS.php">Iniciar sesion</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
