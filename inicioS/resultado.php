@@ -10,8 +10,9 @@
     echo $con;
 
     $q=mysqli_query($conexion,$q);
-    $result=mysql_result($q,0);
-    echo $result;
+    $result=mysqli_fetch_array($q);
+    echo "nombre: ".$result['nombre'];
+    echo "contra: ".$result['contrasena'];
 ?>
 
 
