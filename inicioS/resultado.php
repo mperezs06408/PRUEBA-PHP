@@ -8,8 +8,8 @@
     echo $nombre;
     $con=$_POST['contrasena'];
     echo $con;
-
-    $q=mysqli_query($conexion,$q);
+    $sql="SELECT * FROM USUARIO WHERE nombre='".$nombre."' AND contrasena='".$con."'";
+    $q=mysqli_query($conexion,$sql);
     $result=mysqli_fetch_array($q);
     echo "nombre: ".$result['nombre'];
     echo "contra: ".$result['contrasena'];
