@@ -13,6 +13,11 @@
     $result=mysqli_fetch_array($q);
     echo "nombre: ".$result['nombre'];
     echo "contra: ".$result['contrasena'];
+    if (mysqli_num_rows($q)==0) {
+        echo "no existe el usuario";
+    } else {
+        echo "usuario existe";
+    }
 ?>
 
 
